@@ -96,11 +96,7 @@ export class ImageLoader {
   }
 
   private get isWKWebView(): boolean {
-    return (
-      this.platform.is('ios') &&
-      (<any>window).webkit &&
-      (<any>window).webkit.messageHandlers
-    );
+    return true;
   }
 
   private get isIonicWKWebView(): boolean {
